@@ -17,8 +17,7 @@ import numpy as np
 import random
 import sys
 
-path = get_file('tweets.txt', origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')
-text = open(path).read().lower()
+text = open("tweets.txt").read().lower()
 print('corpus length:', len(text))
 
 chars = sorted(list(set(text)))
