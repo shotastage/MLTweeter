@@ -17,7 +17,7 @@ import numpy as np
 import random
 import sys
 
-text = open("tweets.txt").read().lower()
+text = open("tweets.txt").read()
 print('corpus length:', len(text))
 
 chars = sorted(list(set(text)))
