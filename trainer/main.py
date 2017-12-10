@@ -1,13 +1,7 @@
-from morphological_analysis import parser
+from morphological_analysis.mecab_backend import MecabBackend
 
-try:
-    parsing = parser.MorphologicalAnalysis("mecab")
-except:
-    print("ぁぁぁ")
+
+if __name__ == "__main__":
     
-    exit()
-try:
-
-    parsing.parse("もうまじやばい")
-except:
-    print("dk")
+    parsing = MecabBackend()
+    print(parsing.parse("もうまじやばい"))

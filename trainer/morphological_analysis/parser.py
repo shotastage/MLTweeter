@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from morphological_analysis import mecab_backend
-
-
+from trainer.morphological_analysis.mecab_backend import MecabBackend
 class MorphologicalAnalysis():
 
     def __init__(self, backend):
@@ -11,4 +9,4 @@ class MorphologicalAnalysis():
 
     def parse(self, string):
         if self._backend == "mecab":
-            mecab_backend.parse(string)
+            MecabBackend.parse(string)

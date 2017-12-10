@@ -2,8 +2,9 @@
 
 import MeCab
 
+class MecabBackend():
 
-def parse(string):
-    mecab = MeCab.Tagger("-Ochasen")
-
-    return mecab.parse(string)
+    @staticmethod
+    def parse(string):
+        mecab = MeCab.Tagger("-Ochasen")
+        return mecab.parse(string)
